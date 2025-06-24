@@ -148,14 +148,30 @@ function nextQuestion(correct) {
   }
 }
 
-function finishQuiz() {
+async function finishQuiz() {
   clearInterval(globalTimer);
+
+  // Salvar no Firebase
+  const nome = prompt("Digite seu nome para o ranking:");
+  try {
+    await firebaseAddDoc(firebaseCollection(firebaseDB, "ranking"), {
+      nome,
+      score,
+      tempo: globalTime,
+      data: new Date().toISOString()
+    });
+    console.log("Pontuação salva!");
+  } catch (e) {
+    console.error("Erro ao salvar pontuação:", e);
+  }
+
+  // Mostrar resultado
   questionEl.innerText = `✅ Quiz finalizado! Você acertou ${score}/${selectedQuestions.length}`;
   answersEl.innerHTML = "";
   timerEl.innerText = `⏳ Tempo total: ${globalTime}s`;
   restartBtn.style.display = "inline-block";
+  document.getElementById("back-home").style.display = "inline-block";
   document.getElementById("grafico").style.display = "block";
-  gerarGrafico();
 }
 
 function restartQuiz() {
