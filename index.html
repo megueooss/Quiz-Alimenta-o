@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz: Alim Saudável 🍎</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+  <div id="start-screen">
+    <h1>Quiz: Alimentação Saudável 🥦</h1>
+    <button onclick="startQuiz()" class="main-btn">▶️ Iniciar Quiz</button>
+    <button onclick="showRanking()" class="main-btn">🏆 Ranking</button>
+    <button onclick="showSettings()" class="main-btn">⚙️ Configurações</button>
+    <label style="display: block; margin-top: 15px;">
+    <input type="checkbox" id="speedrun-checkbox">
+    🕒 Ativar Speedrun Mode (milissegundos)
+    </label>
+  </div>
+
+  <div id="quiz-container" style="display: none;">
+    <h1>Quiz Alimentação Saudável</h1>
+    <div id="score">🎯 Acertos: 0/0</div>
+    <div id="timer">⏳ Tempo: 0s</div>
+    <div id="difficulty">Nível: </div>
+    <div id="question">Pergunta aparecerá aqui</div>
+    <div id="answers"></div>
+    <button id="restart" style="display: none;">🔄 Reiniciar Quiz</button>
+    <canvas id="grafico" width="400" height="200" style="display: none;"></canvas>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/javascript.js"></script>
+</body>
+</html>
