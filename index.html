@@ -29,6 +29,29 @@
     <canvas id="grafico" width="400" height="200" style="display: none;"></canvas>
   </div>
   
+  <script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+  import { getFirestore, collection, addDoc, getDocs } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
+
+ const firebaseConfig = {
+  apiKey: "AIzaSyAs6XEDAmE6M6YOcurGvF3GLYLclMidS9s",
+  authDomain: "quizalimentacao.firebaseapp.com",
+  projectId: "quizalimentacao",
+  storageBucket: "quizalimentacao.firebasestorage.app",
+  messagingSenderId: "395091104920",
+  appId: "1:395091104920:web:c13d9c29509a908719eced",
+  measurementId: "G-ZQCEJFNR20"
+};
+
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+
+  window.firebaseDB = db;
+  window.firebaseAddDoc = addDoc;
+  window.firebaseGetDocs = getDocs;
+  window.firebaseCollection = collection;
+</script>
+  
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="js/javascript.js"></script>
 </body>
