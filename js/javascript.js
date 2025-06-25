@@ -37,10 +37,161 @@ const questions = [
   { question: "Suplementos substituem refeições?", answers: ["Sim, completamente", "Não, são apenas complementos", "Apenas no café da manhã", "Depende da idade"], correct: 1, difficulty: "fácil" },
   { question: "O que são alimentos ultraprocessados?", answers: ["Frutas secas", "Alimentos com muitos aditivos artificiais", "Leite e derivados", "Vegetais cozidos"], correct: 1, difficulty: "normal" },
   { question: "Qual desses alimentos aumenta o colesterol bom (HDL)?", answers: ["Abacate", "Bacon", "Manteiga", "Batata frita"], correct: 0, difficulty: "fácil" },
-  { question: "Qual é o papel da água no nosso corpo?", answers: ["Causa retenção", "Ajuda na digestão e regulação da temperatura", "Engorda", "Não tem função clara"], correct: 1, difficulty: "fácil" }
+  { question: "Qual é o papel da água no nosso corpo?", answers: ["Causa retenção", "Ajuda na digestão e regulação da temperatura", "Engorda", "Não tem função clara"], correct: 1, difficulty: "fácil" },
+  {
+  question: "Qual suplemento é mais conhecido por ajudar no ganho de massa muscular?",
+  answers: ["Ômega-3", "Creatina", "Colágeno", "Vitamina D"],
+  correct: 1,
+  difficulty: "fácil"
+  },
+  {
+    question: "O whey protein é uma fonte de qual macronutriente?",
+    answers: ["Gordura", "Carboidrato", "Proteína", "Fibra"],
+    correct: 2,
+    difficulty: "fácil"
+  },
+  {
+    question: "Qual suplemento é indicado para ajudar na saúde das articulações?",
+    answers: ["Glucosamina", "Cafeína", "BCAA", "Zinco"],
+    correct: 0,
+    difficulty: "normal"
+  },
+  {
+    question: "Qual vitamina é lipossolúvel e pode ser tóxica em excesso?",
+    answers: ["Vitamina C", "Vitamina B12", "Vitamina D", "Vitamina B6"],
+    correct: 2,
+    difficulty: "normal"
+  },
+  {
+    question: "A creatina age principalmente em qual sistema energético?",
+    answers: ["Glicolítico", "Aeróbico", "Fosfagênico", "Oxidativo"],
+    correct: 2,
+    difficulty: "difícil"
+  },
+  {
+    question: "Qual suplemento é mais utilizado para melhorar o foco e desempenho mental?",
+    answers: ["Magnésio", "Colágeno", "Cafeína", "Cálcio"],
+    correct: 2,
+    difficulty: "fácil"
+  },
+  {
+    question: "Qual é o principal objetivo da suplementação com BCAA?",
+    answers: ["Melhorar a memória", "Diminuir fadiga muscular", "Aumentar gordura corporal", "Regular a tireoide"],
+    correct: 1,
+    difficulty: "normal"
+  },
+  {
+    question: "Qual mineral é essencial para o transporte de oxigênio no sangue?",
+    answers: ["Cálcio", "Ferro", "Zinco", "Selênio"],
+    correct: 1,
+    difficulty: "fácil"
+  },
+  {
+    question: "Em qual momento é mais comum consumir whey protein?",
+    answers: ["Antes de dormir", "Durante o treino", "Após o treino", "Antes do café da manhã"],
+    correct: 2,
+    difficulty: "fácil"
+  },
+  {
+    question: "A suplementação de colágeno ajuda principalmente na saúde de qual tecido?",
+    answers: ["Muscular", "Cerebral", "Conjuntivo", "Linfático"],
+    correct: 2,
+    difficulty: "normal"
+  },
+  {
+    question: "Qual é a recomendação mais comum para o consumo de creatina?",
+    answers: ["10g por refeição", "5g ao dia", "30g pós-treino", "1g a cada hora"],
+    correct: 1,
+    difficulty: "normal"
+  },
+  {
+    question: "Quais aminoácidos formam o BCAA?",
+    answers: ["Glicina, prolina, serina", "Leucina, isoleucina, valina", "Arginina, lisina, histidina", "Alanina, cisteína, metionina"],
+    correct: 1,
+    difficulty: "difícil"
+  },
+  {
+    question: "Qual suplemento é utilizado por pessoas com intolerância à lactose?",
+    answers: ["Colágeno", "Whey Isolado", "Creatina", "Ômega-3"],
+    correct: 1,
+    difficulty: "normal"
+  },
+  {
+    question: "Qual suplemento é feito a partir do óleo de peixe?",
+    answers: ["Ômega-3", "Vitamina A", "Creatina", "Caseína"],
+    correct: 0,
+    difficulty: "fácil"
+  },
+  {
+    question: "Qual suplemento é mais recomendado para auxiliar no sono e relaxamento?",
+    answers: ["Cafeína", "Vitamina C", "Magnésio", "Beta-alanina"],
+    correct: 2,
+    difficulty: "normal"
+  },
+  {
+    question: "A beta-alanina ajuda principalmente em qual aspecto do treino?",
+    answers: ["Aumentar força máxima", "Melhorar resistência muscular", "Reduzir peso corporal", "Aumentar testosterona"],
+    correct: 1,
+    difficulty: "difícil"
+  },
+  {
+    question: "Qual suplemento pode causar retenção de água muscular como efeito colateral?",
+    answers: ["Vitamina B12", "Creatina", "Zinco", "Whey"],
+    correct: 1,
+    difficulty: "normal"
+  },
+  {
+    question: "O que diferencia o Whey Isolado do Whey Concentrado?",
+    answers: ["Mais carboidratos", "Mais lactose", "Maior pureza proteica", "Menor absorção"],
+    correct: 2,
+    difficulty: "normal"
+  },
+  {
+    question: "Qual suplemento é mais associado ao ganho de peso (massa + gordura)?",
+    answers: ["Termogênico", "Hipercalórico", "Multivitamínico", "Ômega-3"],
+    correct: 1,
+    difficulty: "fácil"
+  },
+  {
+    question: "A vitamina C é conhecida por qual principal benefício?",
+    answers: ["Melhora da digestão", "Aumento da energia", "Aumento da imunidade", "Ganho de massa"],
+    correct: 2,
+    difficulty: "fácil"
+  },
+  {
+    question: "Qual suplemento pode ser indicado para vegetarianos?",
+    answers: ["Vitamina B12", "Whey protein", "Creatina", "Cafeína"],
+    correct: 0,
+    difficulty: "normal"
+  },
+  {
+    question: "Qual suplemento é conhecido por ajudar na recuperação muscular pós-exercício?",
+    answers: ["Vitamina A", "Ômega-3", "Multivitamínico", "Cafeína"],
+    correct: 1,
+    difficulty: "normal"
+  },
+  {
+    question: "Qual suplemento deve ser evitado à noite para não atrapalhar o sono?",
+    answers: ["Creatina", "Cafeína", "Ômega-3", "Colágeno"],
+    correct: 1,
+    difficulty: "fácil"
+  },
+  {
+    question: "Suplementos substituem uma alimentação equilibrada?",
+    answers: ["Sim, são completos", "Não, são complementos", "Depende do tipo", "Apenas em dietas líquidas"],
+    correct: 1,
+    difficulty: "fácil"
+  },
+  {
+    question: "Qual é o papel do multivitamínico?",
+    answers: ["Substituir refeições", "Aumentar energia", "Repor diversas vitaminas e minerais", "Perder gordura rapidamente"],
+    correct: 2,
+    difficulty: "fácil"
+  }
 ];
 
 let selectedQuestions = [], current = 0, score = 0, globalTime = 0, globalTimer;
+let localRanking = [];
 
 const acertoAudio = new Audio("sounds/osu_acerto.mp3");
 const erroAudio = new Audio("sounds/minecrafthit_erro.mp3");
@@ -50,6 +201,7 @@ const answersEl = document.getElementById("answers");
 const scoreEl = document.getElementById("score");
 const timerEl = document.getElementById("timer");
 const restartBtn = document.getElementById("restart");
+const backHomeBtn = document.getElementById("back-home");
 
 function shuffle(array) {
   for (let i = array.length - 1; i > 0; i--) {
@@ -85,19 +237,13 @@ let globalInterval;
 
 function startGlobalTimer() {
   globalStartTime = Date.now();
-  clearInterval(globalInterval);
+  clearInterval(globalInterval); 
 
   globalInterval = setInterval(() => {
     const now = Date.now();
     const elapsed = now - globalStartTime;
-
-    if (speedrunMode) {
-      const seconds = (elapsed / 1000).toFixed(2);
-      timerEl.innerText = `⏱️ Tempo total: ${seconds}s`;
-    } else {
-      const seconds = Math.floor(elapsed / 1000);
-      timerEl.innerText = `⏳ Tempo total: ${seconds}s`;
-    }
+    const seconds = (elapsed / 1000).toFixed(2);
+    timerEl.innerText = `⏱️ Tempo total: ${seconds}s`;
   }, 50);
 }
 
@@ -148,29 +294,18 @@ function nextQuestion(correct) {
   }
 }
 
-async function finishQuiz() {
-  clearInterval(globalTimer);
+function finishQuiz() {
+  clearInterval(globalInterval); // <- Isso para o cronômetro corretamente
+  const now = Date.now();
+  const elapsed = now - globalStartTime;
+  const totalSeconds = (elapsed / 1000).toFixed(2);
 
-  // Salvar no Firebase
-  const nome = prompt("Digite seu nome para o ranking:");
-  try {
-    await firebaseAddDoc(firebaseCollection(firebaseDB, "ranking"), {
-      nome,
-      score,
-      tempo: globalTime,
-      data: new Date().toISOString()
-    });
-    console.log("Pontuação salva!");
-  } catch (e) {
-    console.error("Erro ao salvar pontuação:", e);
-  }
-
-  // Mostrar resultado
   questionEl.innerText = `✅ Quiz finalizado! Você acertou ${score}/${selectedQuestions.length}`;
   answersEl.innerHTML = "";
-  timerEl.innerText = `⏳ Tempo total: ${globalTime}s`;
+  timerEl.innerText = `⏱️ Tempo total: ${totalSeconds}s`;
+
   restartBtn.style.display = "inline-block";
-  document.getElementById("back-home").style.display = "inline-block";
+  backHomeBtn.style.display = "inline-block";
   document.getElementById("grafico").style.display = "block";
 }
 
@@ -188,10 +323,61 @@ function restartQuiz() {
 
 restartBtn.addEventListener("click", restartQuiz);
 
+function backToHome() {
+  document.getElementById("quiz-container").style.display = "none";
+  document.getElementById("start-screen").style.display = "block";
+  document.getElementById("grafico").style.display = "none";
+  restartBtn.style.display = "none";
+  backHomeBtn.style.display = "none";
+  clearInterval(globalInterval);
+}
+backHomeBtn.addEventListener("click", backToHome);
+
+function finishQuiz() {
+  clearInterval(globalInterval);
+  const now = Date.now();
+  const elapsed = now - globalStartTime;
+  const totalSeconds = (elapsed / 1000).toFixed(2);
+
+  localRanking.push({
+    nome: prompt("Digite seu nome para o ranking:") || "Anônimo",
+    acertos: score,
+    tempo: parseFloat(totalSeconds) // garantir que tempo é número
+  });
+
+  // Ordena: menor tempo primeiro; se empate no tempo, maior acertos primeiro
+  localRanking.sort((a, b) => {
+    if (a.tempo !== b.tempo) {
+      return a.tempo - b.tempo;
+    }
+    return b.acertos - a.acertos;
+  });
+
+  questionEl.innerText = `✅ Quiz finalizado! Você acertou ${score}/${selectedQuestions.length}`;
+  answersEl.innerHTML = "";
+  timerEl.innerText = `⏱️ Tempo total: ${totalSeconds}s`;
+  restartBtn.style.display = "inline-block";
+  backHomeBtn.style.display = "inline-block";
+  document.getElementById("grafico").style.display = "block";
+
+  mostrarRankingLocal();
+}
+
+function mostrarRankingLocal() {
+  const rankingDiv = document.getElementById("ranking-local");
+  rankingDiv.innerHTML = "<h3>🏆 Ranking Local</h3>";
+
+  localRanking.forEach((entry, index) => {
+    const linha = document.createElement("div");
+    linha.innerText = `${index + 1}. ${entry.nome} - ${entry.acertos} acertos - ${entry.tempo}s`;
+    rankingDiv.appendChild(linha);
+  });
+}
+
 function gerarGrafico() {
   const ctx = document.getElementById("grafico").getContext("2d");
   new Chart(ctx, {
-    type: "pie",
+    type: "column",
     data: {
       labels: ["Acertos", "Erros"],
       datasets: [{
