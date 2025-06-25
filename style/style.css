@@ -1,6 +1,7 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #6e6e6e;
+  background-image: url('/Imagens/alimentacao.jpeg');
+  background-color: #f0f4f8;
   margin: 0;
   padding: 20px;
   text-align: center;
@@ -9,7 +10,7 @@ body {
 #start-screen {
   text-align: center;
   padding: 40px;
-  background-color: #757575;
+  background-color: #ffffff;
   max-width: 500px;
   margin: auto;
   border-radius: 12px;
@@ -91,6 +92,21 @@ body {
 }
 
 #restart:hover {
+  background: #388e3c;
+}
+
+#back-home {
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  background: #4caf50;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#back-home:hover {
   background: #388e3c;
 }
 
